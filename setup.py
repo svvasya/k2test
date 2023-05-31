@@ -12,6 +12,6 @@ setup(
     package_data={  # Optional
         "k2test": ["static/style.css", "static/default.css", "templates/index.html", "templates/login.html"]    },
     install_requires=[
-            beautifulsoup4
+            beautifulsoup
     ],
 )
