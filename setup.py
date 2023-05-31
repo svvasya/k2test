@@ -18,6 +18,6 @@ setup(
     packages=['k2test'],
     include_package_data=True,
     install_requires=[
-        'flask',
+        
     ],
 )
