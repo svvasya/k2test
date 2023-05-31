@@ -10,7 +10,7 @@ setup(
     python_requires=">=3.7, <=3.11.2",
     packages=['k2test'],
     package_data={  # Optional
-        "k2test": ["main.py", "static/style.css"]    },
+        "k2test": ["static/style.css"]    },
     install_requires=[
             
     ],
