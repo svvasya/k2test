@@ -15,7 +15,7 @@ from setuptools import setup, find_packages
 setup(
     name='k2test',
     version='1.0.0',
-    packages=['components.k2test'],
+    packages=['k2test.k2test'],
     include_package_data=True,
     install_requires=[
         'flask',
