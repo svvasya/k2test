@@ -19,7 +19,7 @@ setup(
     author='Your Name',
     author_email='yourname@example.com',
     keywords="k2test, k2",
-    python_requires=">=3.7, <4",
+    python_requires=">=3.7, <=3.11",
     packages=['k2test'],
     package_data={  # Optional
         "k2test": ["main.py"],
