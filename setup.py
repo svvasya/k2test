@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 #    packages=find_packages(),  
 #    package_data={'k2test': ['views.py']},
 #    install_requires=[
-
+  
  #   ],
 #)
 setup(
@@ -18,6 +18,7 @@ setup(
     packages=['k2test'],
     include_package_data=True,
     install_requires=[
+     
         
     ],
 )
