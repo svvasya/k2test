@@ -4,14 +4,12 @@ from flask import current_app as k2
 from flask import Blueprint, json
 from flask_sqlalchemy import SQLAlchemy
 
-
+app = k2
+db = k2.extensions['sqlalchemy'].db
 k2test_bp = Blueprint('k2test', __name__)
 
 @k2test_bp.route('/new')
-def new_component():
-    app = k2
-    db = k2.extensions['sqlalchemy'].db
-
+def new_component():    
     with app.app_context():
         connection = db.engine.connect()
         query = db.text("SELECT email, login FROM k2users")
