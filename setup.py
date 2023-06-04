@@ -11,5 +11,5 @@ setup(
     packages=['k2test'],
     package_data={  # Optional
         "k2test": ["static/style.css", "static/default.css", "templates/index.html", "templates/login.html"]    },
-    install_requires=["peppercorn"],
+    install_requires=[""],
 )
