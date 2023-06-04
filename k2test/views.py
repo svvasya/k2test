@@ -7,4 +7,16 @@ k2test_bp = Blueprint('k2test', __name__)
 
 @k2test_bp.route('/new')
 def new_component():
-    return 'нова встановлена компонента'
+    app = current_app
+
+    
+    with app.app_context():
+        connection = db.engine.connect()
+        query = "SELECT * FROM k2users"
+        result = connection.execute(query)
+        k2users = result.fetchall()
+
+   
+    return k2users
+    
+    
