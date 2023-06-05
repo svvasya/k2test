@@ -17,12 +17,7 @@ def new_component():
     # Перетворення результату на JSON
     json_result = json.dumps(rows)
 
-    #return json_result
-    k2users = result.fetchall()
-
-   
-    return k2users
-    
+    return json_result
    
     
    
