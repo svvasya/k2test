@@ -5,7 +5,7 @@ from flask import Blueprint, json
 from flask_sqlalchemy import SQLAlchemy
 k2test_bp = Blueprint('k2test', __name__)
 
-@k2test_bp.route('/new')
+@k2test.route('/new')
 def new_component():    
     db = k2.extensions['sqlalchemy'].db
     connection = db.engine.connect()
