@@ -11,11 +11,19 @@ def new_component():
     connection = db.engine.connect()
     query = db.text("SELECT email, login FROM k2users")
     result = connection.execute(query).fetchall()
-
     rows = [dict(email=row.email, login=row.login) for row in result]
     # Перетворення результату на JSON
     json_result = json.dumps(rows)
-
     return json_result
+
+@k2test.route('/new2')
+def new_component():
+    return 'сторінка 2'
     
+@k2test.route('/new3')
+def new_component():
+    return 'сторінка 3'
    
+@k2test.route('/new4')
+def new_component():
+    return 'сторінка 4'
